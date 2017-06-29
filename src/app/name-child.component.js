@@ -9,25 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var hero_1 = require("./hero");
-var HeroChild = (function () {
-    function HeroChild() {
+var NameChild = (function () {
+    function NameChild() {
+        this._name = '';
     }
-    return HeroChild;
+    Object.defineProperty(NameChild.prototype, "name", {
+        get: function () {
+            return this._name;
+        },
+        set: function (name) {
+            this._name = (name && name.trim()) || '<no name set>';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return NameChild;
 }());
 __decorate([
     core_1.Input(),
-    __metadata("design:type", hero_1.Hero)
-], HeroChild.prototype, "hero", void 0);
-__decorate([
-    core_1.Input('master'),
-    __metadata("design:type", String)
-], HeroChild.prototype, "masterName", void 0);
-HeroChild = __decorate([
+    __metadata("design:type", String),
+    __metadata("design:paramtypes", [String])
+], NameChild.prototype, "name", null);
+NameChild = __decorate([
     core_1.Component({
-        selector: 'hero-child',
-        templateUrl: './hero-child.component.html'
+        selector: 'name-child',
+        templateUrl: './name-child.component.html'
     })
-], HeroChild);
-exports.HeroChild = HeroChild;
-//# sourceMappingURL=hero-child.component.js.map
+], NameChild);
+exports.NameChild = NameChild;
+//# sourceMappingURL=name-child.component.js.map

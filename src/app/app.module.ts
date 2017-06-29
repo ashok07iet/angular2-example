@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { HeroParent } from './hero-parent.component';
-import { HeroChild } from './hero-child.component';
+import { NameParent } from './name-parent.component';
+import { NameChild } from './name-child.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,8 @@ import { HeroChild } from './hero-child.component';
   ],
   declarations: [
     AppComponent,
-    HeroParent,
-    HeroChild
+    NameParent,
+    NameChild
   ],
   bootstrap: [AppComponent],
   providers: []

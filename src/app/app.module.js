@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var hero_parent_component_1 = require("./hero-parent.component");
-var hero_child_component_1 = require("./hero-child.component");
+var name_parent_component_1 = require("./name-parent.component");
+var name_child_component_1 = require("./name-child.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,8 +22,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            hero_parent_component_1.HeroParent,
-            hero_child_component_1.HeroChild
+            name_parent_component_1.NameParent,
+            name_child_component_1.NameChild
         ],
         bootstrap: [app_component_1.AppComponent],
         providers: []

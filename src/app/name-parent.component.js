@@ -6,19 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var hero_1 = require("./hero");
-var HeroParent = (function () {
-    function HeroParent() {
-        this.heroes = hero_1.HEROES;
-        this.master = 'Master';
+var NameParent = (function () {
+    function NameParent() {
+        this.names = ['Mr. IQ', '   ', '  Bombasto  '];
     }
-    return HeroParent;
+    return NameParent;
 }());
-HeroParent = __decorate([
+NameParent = __decorate([
     core_1.Component({
-        selector: 'hero-parent',
-        templateUrl: './hero-parent.component.html'
+        selector: 'name-parent',
+        templateUrl: './name-parent.component.html'
     })
-], HeroParent);
-exports.HeroParent = HeroParent;
-//# sourceMappingURL=hero-parent.component.js.map
+], NameParent);
+exports.NameParent = NameParent;
+//# sourceMappingURL=name-parent.component.js.map
