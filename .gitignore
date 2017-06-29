@@ -1,0 +1,5 @@
+node_modules/*
+.idea/*
+.editorconfig
+npm-debug.lo*
+console.log*
