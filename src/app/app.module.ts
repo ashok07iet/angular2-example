@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { NameParent } from './name-parent.component';
-import { NameChild } from './name-child.component';
+import { VersionParent } from './version-parent.component';
+import { VersionChild } from './version-child.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,8 @@ import { NameChild } from './name-child.component';
   ],
   declarations: [
     AppComponent,
-    NameParent,
-    NameChild
+    VersionParent,
+    VersionChild
   ],
   bootstrap: [AppComponent],
   providers: []
