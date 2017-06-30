@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { VersionParent } from './version-parent.component';
-import { VersionChild } from './version-child.component';
+import { VoterComponent } from './voter.component';
+import { VoteTakerComponent } from './votetaker.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,8 @@ import { VersionChild } from './version-child.component';
   ],
   declarations: [
     AppComponent,
-    VersionParent,
-    VersionChild
+    VoterComponent,
+    VoteTakerComponent
   ],
   bootstrap: [AppComponent],
   providers: []
