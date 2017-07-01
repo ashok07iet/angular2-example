@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var voter_component_1 = require("./voter.component");
-var votetaker_component_1 = require("./votetaker.component");
+var countdown_parent_component_1 = require("./countdown-parent.component");
+var countdown_timer_component_1 = require("./countdown-timer.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,8 +22,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            voter_component_1.VoterComponent,
-            votetaker_component_1.VoteTakerComponent
+            countdown_parent_component_1.CountdownLocalVarParentComponent,
+            countdown_timer_component_1.CountdownTimerComponent
         ],
         bootstrap: [app_component_1.AppComponent],
         providers: []

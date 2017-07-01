@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { VoterComponent } from './voter.component';
-import { VoteTakerComponent } from './votetaker.component';
+import { CountdownLocalVarParentComponent } from './countdown-parent.component';
+import { CountdownTimerComponent } from './countdown-timer.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,8 @@ import { VoteTakerComponent } from './votetaker.component';
   ],
   declarations: [
     AppComponent,
-    VoterComponent,
-    VoteTakerComponent
+    CountdownLocalVarParentComponent,
+    CountdownTimerComponent
   ],
   bootstrap: [AppComponent],
   providers: []
