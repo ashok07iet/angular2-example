@@ -6,4 +6,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular 2 example';
+  color:string;
 }
