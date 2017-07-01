@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { CountdownLocalVarParentComponent } from './countdown-parent.component';
-import { CountdownTimerComponent } from './countdown-timer.component';
+import { MissionControllerComponent } from './missioncontrol.component';
+import { AstronautComponent } from './astronaut.component';
 
 @NgModule({
   imports: [
@@ -10,8 +10,8 @@ import { CountdownTimerComponent } from './countdown-timer.component';
   ],
   declarations: [
     AppComponent,
-    CountdownLocalVarParentComponent,
-    CountdownTimerComponent
+    MissionControllerComponent,
+    AstronautComponent
   ],
   bootstrap: [AppComponent],
   providers: []
