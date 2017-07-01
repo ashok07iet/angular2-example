@@ -11,11 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
 var app_component_1 = require("./app.component");
-var hero_job_ad_component_1 = require("./hero-job-ad.component");
-var ad_banner_component_1 = require("./ad-banner.component");
-var hero_profile_component_1 = require("./hero-profile.component");
-var ad_directive_1 = require("./ad.directive");
-var ad_service_1 = require("./ad.service");
+var highlight_directive_1 = require("./highlight.directive");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,13 +20,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        providers: [ad_service_1.AdService],
-        declarations: [app_component_1.AppComponent,
-            ad_banner_component_1.AdBannerComponent,
-            hero_job_ad_component_1.HeroJobAdComponent,
-            hero_profile_component_1.HeroProfileComponent,
-            ad_directive_1.AdDirective],
-        entryComponents: [hero_job_ad_component_1.HeroJobAdComponent, hero_profile_component_1.HeroProfileComponent],
+        providers: [],
+        declarations: [app_component_1.AppComponent, highlight_directive_1.HighlightDirective],
         bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
