@@ -9,8 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
 var core_1 = require("@angular/core");
-var power_booster_component_1 = require("./power-booster.component");
+var power_boost_calculator_component_1 = require("./power-boost-calculator.component");
 var exponential_strength_pipe_1 = require("./exponential-strength.pipe");
 var AppModule = (function () {
     function AppModule() {
@@ -19,10 +20,10 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         providers: [],
-        declarations: [power_booster_component_1.PowerBoosterComponent, exponential_strength_pipe_1.ExponentialStrengthPipe],
-        bootstrap: [power_booster_component_1.PowerBoosterComponent]
+        declarations: [power_boost_calculator_component_1.PowerBoostCalculatorComponent, exponential_strength_pipe_1.ExponentialStrengthPipe],
+        bootstrap: [power_boost_calculator_component_1.PowerBoostCalculatorComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
