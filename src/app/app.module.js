@@ -10,8 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
-var app_component_1 = require("./app.component");
-var highlight_directive_1 = require("./highlight.directive");
+var hero_birthday1_component_1 = require("./hero-birthday1.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,8 +20,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
         providers: [],
-        declarations: [app_component_1.AppComponent, highlight_directive_1.HighlightDirective],
-        bootstrap: [app_component_1.AppComponent]
+        declarations: [hero_birthday1_component_1.HeroBirthdayComponent],
+        bootstrap: [hero_birthday1_component_1.HeroBirthdayComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);

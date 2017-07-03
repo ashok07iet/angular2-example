@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { HighlightDirective } from './highlight.directive'
+import { HeroBirthdayComponent } from './hero-birthday1.component';
 
 
 @NgModule({
   imports: [BrowserModule],
   providers: [],
-  declarations: [AppComponent, HighlightDirective],
-  bootstrap: [AppComponent]
+  declarations: [HeroBirthdayComponent],
+  bootstrap: [HeroBirthdayComponent]
 })
 export class AppModule {
   constructor() { }
