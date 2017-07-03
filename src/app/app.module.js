@@ -10,7 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
-var hero_birthday1_component_1 = require("./hero-birthday1.component");
+var power_booster_component_1 = require("./power-booster.component");
+var exponential_strength_pipe_1 = require("./exponential-strength.pipe");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -20,8 +21,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
         providers: [],
-        declarations: [hero_birthday1_component_1.HeroBirthdayComponent],
-        bootstrap: [hero_birthday1_component_1.HeroBirthdayComponent]
+        declarations: [power_booster_component_1.PowerBoosterComponent, exponential_strength_pipe_1.ExponentialStrengthPipe],
+        bootstrap: [power_booster_component_1.PowerBoosterComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
