@@ -12,6 +12,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var core_1 = require("@angular/core");
 var flying_heroes_component_1 = require("./flying-heroes.component");
+var flying_heroes_pipe_1 = require("./flying-heroes.pipe");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,7 +22,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         providers: [],
-        declarations: [flying_heroes_component_1.FlyingHeroesComponent],
+        declarations: [flying_heroes_component_1.FlyingHeroesComponent, flying_heroes_pipe_1.FlyingHeroesPipe],
         bootstrap: [flying_heroes_component_1.FlyingHeroesComponent]
     }),
     __metadata("design:paramtypes", [])
