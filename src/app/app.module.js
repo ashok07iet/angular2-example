@@ -11,8 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var core_1 = require("@angular/core");
-var flying_heroes_component_1 = require("./flying-heroes.component");
-var flying_heroes_pipe_1 = require("./flying-heroes.pipe");
+var key_up_component_1 = require("./key-up.component");
+var app_component_1 = require("./app.component");
+var keyup_enter_components_1 = require("./keyup-enter.components");
+var key_up_v4_component_1 = require("./key-up-v4.component");
+var little_tour_component_1 = require("./little-tour.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,8 +25,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         providers: [],
-        declarations: [flying_heroes_component_1.FlyingHeroesComponent, flying_heroes_pipe_1.FlyingHeroesPipe],
-        bootstrap: [flying_heroes_component_1.FlyingHeroesComponent]
+        declarations: [app_component_1.AppComponent, key_up_component_1.keyupComponent, keyup_enter_components_1.KeyUpComponent_v3, key_up_v4_component_1.KeyUpComponent_v4, little_tour_component_1.LittleTourComponent],
+        bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
