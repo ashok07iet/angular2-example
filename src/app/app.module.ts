@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { AuthInterceptor } from './auth.interceptor';
+import { TimimingInterceptor } from './timiming.interceptor';
 import { AuthService } from './auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 @NgModule({
@@ -17,7 +17,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     AuthService,
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
+      useClass: TimimingInterceptor,
       multi: true
     }
   ]
