@@ -1,32 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
 import { PageNotFoundComponent } from './pageNotFound.component';
+import { AppRoutingModule } from './app-routing.module';
 
-const appRoute: Routes = [
-  {
-    path: 'customers',
-    component: CustomerComponent
-  },
-  {
-    path: 'orders',
-    component: OrderComponent
-  },
-  {
-    path: '',
-    redirectTo: '/customers',
-    pathMatch: 'full'
-
-  },
-  { path: '**', component: PageNotFoundComponent }];
 
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoute)
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
