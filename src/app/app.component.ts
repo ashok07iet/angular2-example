@@ -16,10 +16,10 @@ export class AppComponent implements OnInit {
   result: Customer[] = [];
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
-    this.http.get<Customer[]>('/data/item.json').
+    this.http.get<Customer[]>('/data/item.json1').
       subscribe(data => {
         this.result = data['results'];
         console.log(this.result);
-      });
+      }, error => console.log('error in fetching data'));
   }
 }
