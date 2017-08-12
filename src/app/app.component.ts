@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/retry';
 @Component({
   selector: 'my-app',
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   result: string = '';
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
-    this.http.get('/data/my.txt', { responseType: 'text' }).
+    this.http.get('/data/test-data.txt', { responseType: 'text' }).
       subscribe(data => {
         this.result = data;
       });
