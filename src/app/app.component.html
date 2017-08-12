@@ -1,5 +1,17 @@
 <h1>{{title}}</h1>
 <div>
-<hero-parent></hero-parent>
-
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of result">
+                <td>{{customer.name}}</td>
+                <td>{{customer.address}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

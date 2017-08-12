@@ -6,17 +6,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+require("rxjs/add/operator/map");
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of hero';
+        this.title = 'customer detail';
         this.isUnchanged = false;
+        this.result = [];
     }
+    // constructor(private http: Http) { }
+    AppComponent.prototype.ngOnInit = function () {
+        // this.http.get('/data/item.json')
+        //   .map(data => data.json().results as Customer[]).subscribe(data => {
+        //     this.result = data;
+        //   });
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        templateUrl: './app.component.html'
+        templateUrl: './app.component.html',
+        styles: ["table,th,td{\n    border:1px solid;\n    border-collapse: collapse;\n  }"]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
