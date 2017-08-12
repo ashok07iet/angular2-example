@@ -1,2 +1,8 @@
 <h1 class="container-fluid text-center">{{title}}</h1>
+<div class="container-fluid col-10">
+        <ul class="list-inline">
+                <li class="btn btn-link"><a routerLink="/customers" routerLinkActive="active">customer</a></li>
+                <li class="btn btn-link"><a routerLink="/orders" routerLinkActive="active">order</a></li>
+              </ul>
+</div>
 <router-outlet></router-outlet>
