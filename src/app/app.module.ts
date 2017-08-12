@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { CustomerComponent } from './customer/customer.component';
-import { OrderComponent } from './order/order.component';
 import { PageNotFoundComponent } from './pageNotFound.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { CustomerModule } from './customer/customer.module';
+import { OrderModule } from './order/order.module';
 
 @NgModule({
   imports: [
     BrowserModule,
+    CustomerModule,
+    OrderModule,
     AppRoutingModule
   ],
   declarations: [
     AppComponent,
-    CustomerComponent,
-    OrderComponent,
     PageNotFoundComponent
   ],
   bootstrap: [AppComponent],
