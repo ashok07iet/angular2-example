@@ -13,8 +13,8 @@
           <th>Gender</th>
       </thead>
       <tbody>
-          <tr *ngFor="let customer of customers">
-              <td>{{customer.customerId}}</td>
+          <tr *ngFor="let customer of customers" (click)="onSelectCustomer(customer)" class="btn-link">
+              <td><a routerLink="/customers/{{customer.customerId}}">{{customer.customerId}}</a></td>
               <td>{{customer.FirstName}}</td>
               <td>{{customer.LastName}}</td>
               <td>{{customer.Email}}</td>

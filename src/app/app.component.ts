@@ -5,5 +5,5 @@ import 'rxjs/add/operator/retry';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'Customer App';
+  title = 'CUSTOMER APP';
 }
