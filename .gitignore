@@ -3,4 +3,4 @@ node_modules/*
 .editorconfig
 npm-debug.lo*
 console.log*
-src\app\*.js
+src/app/**/*.js

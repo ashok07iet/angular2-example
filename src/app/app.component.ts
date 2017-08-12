@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
 import { Customer } from './customer.model';
 import 'rxjs/add/operator/map';
 @Component({
@@ -13,11 +14,12 @@ export class AppComponent implements OnInit {
   title = 'customer detail';
   isUnchanged = false;
   result: Customer[] = [];
- // constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
   ngOnInit(): void {
-    // this.http.get('/data/item.json')
-    //   .map(data => data.json().results as Customer[]).subscribe(data => {
-    //     this.result = data;
-    //   });
+    this.http.get<Customer[]>('/data/item.json').
+      subscribe(data => {
+        this.result = data['results'];
+        console.log(this.result);
+      });
   }
 }
