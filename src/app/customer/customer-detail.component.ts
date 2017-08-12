@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 import { CUSTOMERS } from './customer.data';
-
 @Component({
     templateUrl: './customer-detail.html'
 })
