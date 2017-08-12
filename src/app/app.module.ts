@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
+import { PageNotFoundComponent } from './pageNotFound.component';
 
 const appRoute: Routes = [
   {
@@ -19,7 +20,8 @@ const appRoute: Routes = [
     redirectTo: '/customers',
     pathMatch: 'full'
 
-  }];
+  },
+  { path: '**', component: PageNotFoundComponent }];
 
 @NgModule({
   imports: [
@@ -29,7 +31,8 @@ const appRoute: Routes = [
   declarations: [
     AppComponent,
     CustomerComponent,
-    OrderComponent
+    OrderComponent,
+    PageNotFoundComponent
   ],
   bootstrap: [AppComponent],
   providers: []
