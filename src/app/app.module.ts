@@ -1,25 +1,37 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { TimimingInterceptor } from './timiming.interceptor';
-import { AuthService } from './auth.service';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { CustomerComponent } from './customer/customer.component';
+import { OrderComponent } from './order/order.component';
+
+const appRoute: Routes = [
+  {
+    path: 'customers',
+    component: CustomerComponent
+  },
+  {
+    path: 'orders',
+    component: OrderComponent
+  },
+  {
+    path: '',
+    redirectTo: '/customers',
+    pathMatch: 'full'
+
+  }];
+
 @NgModule({
   imports: [
     BrowserModule,
-    HttpClientModule
+    RouterModule.forRoot(appRoute)
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerComponent,
+    OrderComponent
   ],
   bootstrap: [AppComponent],
-  providers: [
-    AuthService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TimimingInterceptor,
-      multi: true
-    }
-  ]
+  providers: []
 })
 export class AppModule { }

@@ -1,0 +1,21 @@
+<div class="container-fluid col-10">
+    <h2>ORDERS</h2>
+    <table class="table table-striped">
+        <thead>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Date</th>
+            <th>CustomerId</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{order.Product}}</td>
+                <td>{{order.price}}</td>
+                <td>{{order.Quantity}}</td>
+                <td>{{order.Date}}</td>
+                <td>{{order.CustomerId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,29 @@
+<div class="container-fluid col-10">
+    <h2>CUSTOMERS</h2>
+  <table class="table table-striped">
+      <thead>
+          <th>CustomerId</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Zip</th>
+          <th>Gender</th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let customer of customers">
+              <td>{{customer.customerId}}</td>
+              <td>{{customer.FirstName}}</td>
+              <td>{{customer.LastName}}</td>
+              <td>{{customer.Email}}</td>
+              <td>{{customer.Address}}</td>
+              <td>{{customer.City}}</td>
+              <td>{{customer.State.name}}</td>
+              <td>{{customer.Zip}}</td>
+              <td>{{customer.Gender}}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
