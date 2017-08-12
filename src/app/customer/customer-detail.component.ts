@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 import { CUSTOMERS } from './customer.data';
 
@@ -12,13 +12,11 @@ export class CustomerDetailComponent implements OnInit {
         private route: ActivatedRoute
     ) { }
     ngOnInit() {
-        this.route.paramMap.switchMap((param: ParamMap) => param.get('id'))
-            .subscribe((id) => {
-                for (let entry of CUSTOMERS) {
-                    if (entry.customerId === parseInt(id, 10)) {
-                        this.customer = entry;
-                    }
-                }
-            });
+        let id = this.route.snapshot.paramMap.get('id');
+        for (let entry of CUSTOMERS) {
+            if (entry.customerId === parseInt(id, 10)) {
+                this.customer = entry;
+            }
+        }
     }
 }
