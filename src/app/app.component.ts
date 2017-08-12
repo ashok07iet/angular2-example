@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Customer } from './customer.model';
 import 'rxjs/add/operator/map';
 @Component({
@@ -20,6 +20,12 @@ export class AppComponent implements OnInit {
       subscribe(data => {
         this.result = data['results'];
         console.log(this.result);
-      }, error => console.log('error in fetching data'));
+      }, (err: HttpErrorResponse) => {
+        if (err instanceof Error) {
+          console.log('err occured' + err.message);
+        } else {
+          console.log(`Backend returned code ${err.status}, body was: ${err.error}`);
+        }
+      });
   }
 }
