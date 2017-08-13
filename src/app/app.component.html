@@ -1,4 +1,19 @@
 <h1 class="container-fluid text-center text-capitalize">{{title}}</h1>
-<div class="jumbotron text-center text-capitalize">
-{{firstCustomer}}
+<div class="container-fluid col-10">
+    <table class="table table-striped">
+        <thead>
+            <th>customerId</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.customerId}}</td>
+                <td>{{customer.FirstName}}</td>
+                <td>{{customer.LastName}}</td>
+                <td>{{customer.Email}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
