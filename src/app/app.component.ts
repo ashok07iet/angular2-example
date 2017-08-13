@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'tour of customer';
   firstCustomer = 'john';
+  isUnchaged = false;
   customers = [{
     'customerId': 1.0,
     'FirstName': 'Marcus',
