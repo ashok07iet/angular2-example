@@ -2,13 +2,15 @@
 <div class="container-fluid col-10">
     <table class="table table-striped">
         <thead>
+            <th>SNO</th>
             <th>customerId</th>
             <th>FirstName</th>
             <th>LastName</th>
             <th>Email</th>
         </thead>
         <tbody>
-            <tr *ngFor="let customer of customers">
+            <tr *ngFor="let customer of customers; let i=index">
+                <td>{{i}}</td>
                 <td>{{customer.customerId}}</td>
                 <td>{{customer.FirstName}}</td>
                 <td>{{customer.LastName}}</td>
@@ -20,4 +22,5 @@
         there are many hero
     </p>
     <span [hidden]="isUnchaged">changed</span>
+    <input #cusInput type="text" [(ngModel)]="inputCust"><span>{{cusInput.value}}</span>
 </div>

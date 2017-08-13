@@ -7,6 +7,7 @@ export class AppComponent {
   title = 'tour of customer';
   firstCustomer = 'john';
   isUnchaged = false;
+  inputCust = 'ashok';
   customers = [{
     'customerId': 1.0,
     'FirstName': 'Marcus',
