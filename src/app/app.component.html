@@ -1,26 +1,10 @@
 <h1 class="container-fluid text-center text-capitalize">{{title}}</h1>
 <div class="container-fluid col-10">
-    <table class="table table-striped">
-        <thead>
-            <th>SNO</th>
-            <th>customerId</th>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Email</th>
-        </thead>
-        <tbody>
-            <tr *ngFor="let customer of customers; let i=index">
-                <td>{{i}}</td>
-                <td>{{customer.customerId}}</td>
-                <td>{{customer.FirstName}}</td>
-                <td>{{customer.LastName}}</td>
-                <td>{{customer.Email}}</td>
-            </tr>
-        </tbody>
-    </table>
-    <p *ngIf="customers.length>1" class="text-primary text-capitalize text-center">
-        there are many hero
-    </p>
-    <span [hidden]="isUnchaged">changed</span>
-    <input #cusInput type="text" [(ngModel)]="inputCust"><span>{{cusInput.value}}</span>
+    <div class="bad curly special"
+    [class]="badCurly">Bad curly</div>
+    <div [class.text-primary]="isSpecial">The class binding is special</div>
+    
+    <!-- binding to `class.special` trumps the class attribute -->
+    <div class="text-danger"
+         [class.text-danger]="!isSpecial">This one is not so special</div>
 </div>
