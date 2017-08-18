@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tour of customer';
-  badCurly = 'curly light';
+  canSave = true;
   isSpecial = true;
 }

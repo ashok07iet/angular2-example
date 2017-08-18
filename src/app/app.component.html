@@ -1,10 +1,7 @@
 <h1 class="container-fluid text-center text-capitalize">{{title}}</h1>
 <div class="container-fluid col-10">
-    <div class="bad curly special"
-    [class]="badCurly">Bad curly</div>
-    <div [class.text-primary]="isSpecial">The class binding is special</div>
-    
-    <!-- binding to `class.special` trumps the class attribute -->
-    <div class="text-danger"
-         [class.text-danger]="!isSpecial">This one is not so special</div>
+    <button [style.color]="isSpecial ? 'red': 'green'">Red</button>
+    <button [style.background-color]="canSave ? 'cyan': 'grey'" >Save</button>
+    <button [style.font-size.em]="isSpecial ? 3 : 1" >Big</button>
+    <button [style.font-size.%]="!isSpecial ? 150 : 50" >Small</button>
 </div>
