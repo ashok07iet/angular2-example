@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tour of customer';
-  canSave = true;
-  isSpecial = true;
+  customer = {};
+  currentHero = { name: 'ass' };
+  name = '';
+  email = '';
+  save() {
+    this.customer = this.name + '::' + this.email;
+  }
 }
