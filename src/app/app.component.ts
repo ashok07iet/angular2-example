@@ -8,7 +8,7 @@ export class AppComponent {
   title = 'Angular 2 App';
   submitMessage: String;
   phone: any;
-  hero = { name: '' };
+  hero = {};
   onSubmit(phone: NgForm) {
     this.submitMessage = JSON.stringify(phone.value);
   }
