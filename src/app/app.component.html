@@ -1,20 +1,14 @@
 <h1 class="container-fluid text-center text-capitalize">{{title}}</h1>
 <div class="container-fluid">
     <div class="col-lg-4">
-    <div>
-        <div class="form-group">
-            <label for="name">name:</label>
-            <input type="text" [(ngModel)]="name" class="form-control" id="name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" [(ngModel)]="email" class="form-control" id="email">
-        </div>
-        <button type="button" (click)="save()" class="btn btn-default">save</button>
-    </div>
-    customer:{{customer}}
-    <input [value]="currentHero.name"
-    (input)="currentHero.name=$event.target.value" >
-    {{currentHero.name}}
+        <div id="two-way-1">
+            <my-sizer [(size)]="fontSizePx"></my-sizer>
+            <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+            <label>FontSize (px): <input [(ngModel)]="fontSizePx"></label>
+          </div>
+          <div id="two-way-2">
+            <h3>De-sugared two-way binding</h3>
+            <my-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></my-sizer>
+          </div>
 </div>
 </div>
