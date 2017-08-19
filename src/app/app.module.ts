@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import {SizerComponent } from './sizer.component';
 
 @NgModule({
   imports: [
@@ -10,8 +9,7 @@ import {SizerComponent } from './sizer.component';
     FormsModule
   ],
   declarations: [
-    AppComponent,
-    SizerComponent
+    AppComponent
   ],
   bootstrap: [AppComponent],
   providers: []

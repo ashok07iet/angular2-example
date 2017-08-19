@@ -1,8 +1,16 @@
 <h1 class="container-fluid text-center text-capitalize">{{title}}</h1>
 <div class="container-fluid">
   <div class="col-lg-4">
-    <input type="text" #phone>
-    <button type="button" (click)="save(phone.value)">save</button>
-    {{phoneNumber}}
+    <form (submit)="onSubmit(heroForm)" #heroForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name
+          <input class="form-control" name="name" required [(ngModel)]="hero.name">
+        </label>
+      </div>
+      <button type="submit" [disabled]="!heroForm.form.valid">Submit</button>
+    </form>
+    <div [hidden]="!heroForm.form.valid">
+      {{submitMessage}}
+    </div>
   </div>
 </div>
