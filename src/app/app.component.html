@@ -1,24 +1,8 @@
 <h1 class="container-fluid text-center text-capitalize">{{title}}</h1>
 <div class="container-fluid">
   <div class="col-lg-4">
-    <!-- NgSwitch binding -->
-    <hr>
-    <h2 id="ngSwitch">NgSwitch Binding</h2>
-
-    <p>Pick your favorite hero</p>
-    <div>
-      <label *ngFor="let h of heroes">
-    <input type="radio" name="heroes" [(ngModel)]="currentHero" [value]="h">{{h.name}}
-  </label>
-    </div>
-
-    <div [ngSwitch]="currentHero.emotion">
-      <div *ngSwitchCase="'happy'">happ hero {{currentHero.name}}</div>
-      <div *ngSwitchCase="'sad'">sad hero {{currentHero.name}}</div>
-      <div *ngSwitchCase="'confused'" >confused hero {{currentHero.name}}</div>
-      <div *ngSwitchCase="'confused'">Are you as confused as {{currentHero.name}}?</div>
-      <div *ngSwitchDefault >unknown hero {{currentHero.name}}</div>
-    </div>
+    <input type="text" #phone>
+    <button type="button" (click)="save(phone.value)">save</button>
+    {{phoneNumber}}
   </div>
-
 </div>
