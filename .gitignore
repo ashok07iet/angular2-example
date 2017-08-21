@@ -5,3 +5,4 @@ npm-debug.lo*
 console.log*
 src/app/**/*.js
 src/app/**/*.map
+nbproject/
